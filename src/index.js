@@ -6,11 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { initializeContract } from "./utils/near";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
 window.nearInitPromise = initializeContract()
   .then(() => {
